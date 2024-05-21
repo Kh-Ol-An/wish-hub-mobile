@@ -1,12 +1,21 @@
+import { FC } from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { Text, View } from 'react-native';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+import AuthProvider from '@/app/providers/AuthProvider';
+import Navigation from '@/app/navigation/Navigation';
 
-export default function App() {
+const App: FC = () => {
     return (
-        <View className="flex-1 items-center justify-center bg-neutral-800">
-            <Text className="text-neutral-100">Open up App.tsx to start working on your app!</Text>
-            <Text>trregfdg</Text>
+        <>
+            <AuthProvider>
+                <SafeAreaProvider>
+                    <Navigation />
+                </SafeAreaProvider>
+            </AuthProvider>
+
             <StatusBar style="auto" />
-        </View>
+        </>
     );
 }
+
+export default App;
