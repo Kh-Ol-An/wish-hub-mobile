@@ -4,24 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6e6d9242-fc19-47dc-926e-27f280734d47" name="Changes" comment="Update and refactored">
-      <change afterPath="$PROJECT_DIR$/app/models/IAuth.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/IWish.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/store/hook.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/store/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/store/my-user/api.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/store/my-user/slice.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/store/my-user/thunks.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/store/my-user/types.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/utils/api.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/utils/encryption-data.ts" afterDir="false" />
+    <list default="true" id="6e6d9242-fc19-47dc-926e-27f280734d47" name="Changes" comment="Installed react-redux, redux-toolkit, crypto-js, axios and react-hook-form, setting redux for using">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/hooks/useAuth.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/IUser.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/IUser.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/navigation/Navigation.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/navigation/Navigation.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/screens/Auth.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/Auth.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/screens/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/Home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/screens/Instruction.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/Instruction.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/screens/Settings.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/Settings.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/store/my-user/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/store/my-user/api.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +126,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717157160468</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Installed react-redux, redux-toolkit, crypto-js, axios and react-hook-form, setting redux for using">
+      <option name="closed" value="true" />
+      <created>1717160821833</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1717160821833</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,6 +158,7 @@
     <MESSAGE value="Installed nativewind and tailwindcss" />
     <MESSAGE value="Created navigation structure" />
     <MESSAGE value="Update and refactored" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update and refactored" />
+    <MESSAGE value="Installed react-redux, redux-toolkit, crypto-js, axios and react-hook-form, setting redux for using" />
+    <option name="LAST_COMMIT_MESSAGE" value="Installed react-redux, redux-toolkit, crypto-js, axios and react-hook-form, setting redux for using" />
   </component>
 </project>

@@ -74,7 +74,7 @@ const login = async (data: ILogin): Promise<AxiosResponse<IAuth>> => {
         // const encryptedPassword = encryptedData(data.password, process.env.REACT_APP_CRYPTO_JS_SECRET);
         const response = await api.post('/login', data);
         // const response = await api.post('/login', { ...data, password: encryptedPassword });
-        localStorage.setItem('token', response.data.accessToken);
+        // localStorage.setItem('token', response.data.accessToken);
         return response;
     } catch (error: any) {
         // toast(

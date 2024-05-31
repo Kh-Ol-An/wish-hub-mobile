@@ -39,11 +39,13 @@ const Navigation: FC = () => {
                             <Stack.Screen key={route.name} name={route.name} component={route.component} />
                         ))
                     )}
+
                     {publicRoutes.map((route) => (
                         <Stack.Screen key={route.name} name={route.name} component={route.component} />
                     ))}
                 </Stack.Navigator>
             </NavigationContainer>
+
             {myUser && currentRoute && <BottomMenu nav={navRef.navigate} currentRoute={currentRoute} />}
         </>
     );
