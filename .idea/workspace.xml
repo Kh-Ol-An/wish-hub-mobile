@@ -4,10 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6e6d9242-fc19-47dc-926e-27f280734d47" name="Changes" comment="Created navigation structure">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
+    <list default="true" id="6e6d9242-fc19-47dc-926e-27f280734d47" name="Changes" comment="Update and refactored">
+      <change afterPath="$PROJECT_DIR$/app/models/IAuth.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/IWish.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/store/hook.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/store/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/store/my-user/api.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/store/my-user/slice.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/store/my-user/thunks.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/store/my-user/types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/utils/api.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/utils/encryption-data.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/hooks/useAuth.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/IUser.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/IUser.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/navigation/Navigation.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/navigation/Navigation.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
@@ -22,9 +34,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
         <option value="HTML File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -116,7 +128,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716275268587</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Update and refactored">
+      <option name="closed" value="true" />
+      <created>1717157160468</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1717157160468</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,6 +159,7 @@
     <MESSAGE value="Fixed path to images; added alias path to project" />
     <MESSAGE value="Installed nativewind and tailwindcss" />
     <MESSAGE value="Created navigation structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created navigation structure" />
+    <MESSAGE value="Update and refactored" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update and refactored" />
   </component>
 </project>
