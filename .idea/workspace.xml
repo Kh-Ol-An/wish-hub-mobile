@@ -1,23 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="6e6d9242-fc19-47dc-926e-27f280734d47" name="Changes" comment="Created navigation structure">
-      <change afterPath="$PROJECT_DIR$/app/Temp.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/hooks/useAuth.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/layout/bottom-menu/BottomMenu.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/layout/bottom-menu/MenuItem.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/layout/bottom-menu/types.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/IUser.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/navigation/Navigation.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/navigation/navigation.types.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/navigation/routes.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/providers/AuthProvider.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/screens/Auth.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/screens/Home.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/screens/Instruction.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/screens/Settings.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
@@ -55,14 +45,18 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
     "last_opened_file_path": "/home/kholan/Development/wish-hub-mobile/app/screens",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "editing.templates",
-    "ts.external.directory.path": "/home/kholan/Development/wish-hub-mobile/node_modules/typescript/lib",
+    "settings.editor.selected.configurable": "preferences.sourceCode.SCSS",
+    "ts.external.directory.path": "C:\\Development\\wish-hub-mobile\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
