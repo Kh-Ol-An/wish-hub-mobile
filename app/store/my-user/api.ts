@@ -19,6 +19,7 @@ import {
 import { IAuth } from '@/app/models/IAuth';
 // import { IUser } from '@/app/models/IUser';
 import { encryptedData } from '@/app/utils/encryption-data';
+import { setAsyncStorage, removeAsyncStorage } from "@/app/utils/useAsyncStorage";
 
 // const registration = async (data: IRegistration): Promise<AxiosResponse<IAuth>> => {
 //     try {
@@ -73,8 +74,18 @@ const login = async (data: ILogin): Promise<AxiosResponse<IAuth>> => {
 
         const encryptedPassword = encryptedData(data.password, process.env.EXPO_PUBLIC_CRYPTO_JS_SECRET);
         const response = await api.post('/login', { ...data, password: encryptedPassword });
-        // await setToken('accessToken', encryptedAccessToken);
-        // await setToken('refreshToken', encryptedRefreshToken);
+
+        const encryptedAccessToken = encryptedData(
+            response.data.accessToken,
+            process.env.EXPO_PUBLIC_CRYPTO_JS_SECRET,
+        );
+        const encryptedRefreshToken = encryptedData(
+            response.data.refreshToken,
+            process.env.EXPO_PUBLIC_CRYPTO_JS_SECRET,
+        );
+        await setAsyncStorage('accessToken', encryptedAccessToken);
+        await setAsyncStorage('refreshToken', encryptedRefreshToken);
+
         return response;
     } catch (error: any) {
         // toast(
@@ -99,27 +110,34 @@ const login = async (data: ILogin): Promise<AxiosResponse<IAuth>> => {
 //         throw error;
 //     }
 // };
-//
-// const refresh = async (): Promise<AxiosResponse<IAuth>> => {
-//     try {
-//         const response = await axios.get(
-//             `${
-//                 process.env.NODE_ENV === 'development'
-//                     ? process.env.REACT_APP_DEV_API_URL
-//                     : process.env.REACT_APP_API_URL
-//             }/refresh`,
-//             { withCredentials: true },
-//         );
-//         localStorage.setItem('token', response.data.accessToken);
-//         return response;
-//     } catch (error: any) {
-//         console.log('my-user refresh error: ', error.response?.data?.message || t('alerts.my-user-api.refresh.error', { type: 'api' }));
-//         localStorage.removeItem('token');
-//         localStorage.removeItem('selectedUserId');
-//         throw error;
-//     }
-// };
-//
+
+const refresh = async (): Promise<AxiosResponse<IAuth>> => {
+    try {
+        const response = await axios.get(
+            `${
+                __DEV__ ? process.env.EXPO_PUBLIC_DEV_API_URL : process.env.EXPO_PUBLIC_API_URL
+            }/refresh`,
+            { withCredentials: true },
+        );
+
+        if (process.env.EXPO_PUBLIC_CRYPTO_JS_SECRET) {
+            const encryptedAccessToken = encryptedData(
+                response.data.accessToken,
+                process.env.EXPO_PUBLIC_CRYPTO_JS_SECRET,
+            );
+            await setAsyncStorage('accessToken', encryptedAccessToken);
+        }
+
+        return response;
+    } catch (error: any) {
+        console.log('my-user refresh error: ', error.response?.data?.message || 'alerts.my-user-api.refresh.error');
+        // console.log('my-user refresh error: ', error.response?.data?.message || t('alerts.my-user-api.refresh.error', { type: 'api' }));
+        await removeAsyncStorage('accessToken');
+        // localStorage.removeItem('selectedUserId');
+        throw error;
+    }
+};
+
 // const forgotPassword = async (data: IForgotPassword): Promise<void> => {
 //     try {
 //         await api.put('/forgot-password', data);
@@ -288,7 +306,7 @@ const myUserApi = {
     // googleAuthorization,
     login,
     // logout,
-    // refresh,
+    refresh,
     // forgotPassword,
     // changeForgottenPassword,
     // changePassword,

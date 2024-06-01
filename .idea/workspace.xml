@@ -4,8 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6e6d9242-fc19-47dc-926e-27f280734d47" name="Changes" comment="installed react-native-get-random-values">
+    <list default="true" id="6e6d9242-fc19-47dc-926e-27f280734d47" name="Changes" comment="refactored json files">
+      <change afterPath="$PROJECT_DIR$/app/utils/useAsyncStorage.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/screens/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/Home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/store/my-user/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/store/my-user/api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/utils/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/utils/api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +109,7 @@
       <workItem from="1716184389684" duration="1753000" />
       <workItem from="1716273338325" duration="1367000" />
       <workItem from="1717183543333" duration="3500000" />
-      <workItem from="1717223987648" duration="15846000" />
+      <workItem from="1717223987648" duration="21952000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed path to images; added alias path to project">
       <created>1713902415169</created>
@@ -166,7 +172,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717247642187</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="refactored json files">
+      <option name="closed" value="true" />
+      <created>1717250064823</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1717250064823</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,6 +208,7 @@
     <MESSAGE value="setting react-hook-form for using" />
     <MESSAGE value="added .env to .gitignore; fixed baseURL in axios api; setting login in Auth.tsx; changed start to dev in scripts in package.json" />
     <MESSAGE value="installed react-native-get-random-values" />
-    <option name="LAST_COMMIT_MESSAGE" value="installed react-native-get-random-values" />
+    <MESSAGE value="refactored json files" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactored json files" />
   </component>
 </project>
