@@ -10,10 +10,10 @@ const api = axios.create({
 });
 
 // Додавання токена до заголовків кожного запиту
-api.interceptors.request.use((config) => {
-    // const token = localStorage.getItem('token');
-    // if (token) {
-    //     config.headers.Authorization = `Bearer ${token}`;
+api.interceptors.request.use(async (config) => {
+    // const accessToken = await getToken('accessToken');
+    // if (accessToken) {
+    //     config.headers.Authorization = `Bearer ${accessToken}`;
     // }
     return config;
 });

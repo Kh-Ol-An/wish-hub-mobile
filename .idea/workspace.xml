@@ -4,12 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6e6d9242-fc19-47dc-926e-27f280734d47" name="Changes" comment="setting react-hook-form for using">
-      <change afterPath="$PROJECT_DIR$/%ProgramData%/Microsoft/Windows/UUS/State/_active.uusver" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="6e6d9242-fc19-47dc-926e-27f280734d47" name="Changes" comment="added .env to .gitignore; fixed baseURL in axios api; setting login in Auth.tsx; changed start to dev in scripts in package.json">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/screens/Auth.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/Auth.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/screens/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/Home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/store/my-user/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/store/my-user/api.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/utils/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/utils/api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/utils/encryption-data.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/utils/encryption-data.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -108,7 +111,7 @@
       <workItem from="1716184389684" duration="1753000" />
       <workItem from="1716273338325" duration="1367000" />
       <workItem from="1717183543333" duration="3500000" />
-      <workItem from="1717223987648" duration="5135000" />
+      <workItem from="1717223987648" duration="14135000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed path to images; added alias path to project">
       <created>1713902415169</created>
@@ -155,7 +158,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717162604466</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="added .env to .gitignore; fixed baseURL in axios api; setting login in Auth.tsx; changed start to dev in scripts in package.json">
+      <option name="closed" value="true" />
+      <created>1717233621967</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1717233621967</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,6 +192,7 @@
     <MESSAGE value="Update and refactored" />
     <MESSAGE value="Installed react-redux, redux-toolkit, crypto-js, axios and react-hook-form, setting redux for using" />
     <MESSAGE value="setting react-hook-form for using" />
-    <option name="LAST_COMMIT_MESSAGE" value="setting react-hook-form for using" />
+    <MESSAGE value="added .env to .gitignore; fixed baseURL in axios api; setting login in Auth.tsx; changed start to dev in scripts in package.json" />
+    <option name="LAST_COMMIT_MESSAGE" value="added .env to .gitignore; fixed baseURL in axios api; setting login in Auth.tsx; changed start to dev in scripts in package.json" />
   </component>
 </project>

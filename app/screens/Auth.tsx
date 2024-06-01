@@ -9,6 +9,7 @@ type Inputs = {
     firstName: IUser['firstName']
     email: IUser['email']
     password: string
+    lang: 'en'
 }
 
 const Auth: FC = () => {
@@ -24,12 +25,13 @@ const Auth: FC = () => {
             // firstName: '',
             email: '',
             password: '',
+            lang: 'en',
         },
     });
 
     const onSubmit: SubmitHandler<Inputs> = async (data) => {
         // console.log('onSubmit: ', data);
-        await dispatch(login({ ...data, lang: 'en' }));
+        await dispatch(login(data));
     };
 
     return (

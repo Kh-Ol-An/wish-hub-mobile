@@ -67,20 +67,21 @@ import { encryptedData } from '@/app/utils/encryption-data';
 
 const login = async (data: ILogin): Promise<AxiosResponse<IAuth>> => {
     try {
-        // if (!process.env.REACT_APP_CRYPTO_JS_SECRET) {
-        //     return Promise.reject('REACT_APP_CRYPTO_JS_SECRET is not defined.');
-        // }
+        if (!process.env.EXPO_PUBLIC_CRYPTO_JS_SECRET) {
+            return Promise.reject('EXPO_PUBLIC_CRYPTO_JS_SECRET is not defined.');
+        }
 
-        // const encryptedPassword = encryptedData(data.password, process.env.REACT_APP_CRYPTO_JS_SECRET);
-        const response = await api.post('/login', data);
-        // const response = await api.post('/login', { ...data, password: encryptedPassword });
-        // localStorage.setItem('token', response.data.accessToken);
+        const encryptedPassword = encryptedData(data.password, process.env.EXPO_PUBLIC_CRYPTO_JS_SECRET);
+        const response = await api.post('/login', { ...data, password: encryptedPassword });
+        // await setToken('accessToken', encryptedAccessToken);
+        // await setToken('refreshToken', encryptedRefreshToken);
         return response;
     } catch (error: any) {
         // toast(
         //     error.response?.data?.message || t('alerts.my-user-api.login.error', { type: 'api' }),
         //     { type: 'error' },
         // );
+        console.log('error: ', error);
         throw error;
     }
 };

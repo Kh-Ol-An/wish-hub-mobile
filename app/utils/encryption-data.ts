@@ -1,3 +1,4 @@
+import 'react-native-get-random-values';
 import CryptoJS from 'crypto-js';
 // import { t } from 'i18next';
 import { IWish } from '@/app/models/IWish';
@@ -22,9 +23,9 @@ export const unencryptedData = (data: string, show: IWish['show']): string => {
         return '';
     }
 
-    if (show === 'all' || !process.env.REACT_APP_CRYPTO_JS_SECRET) {
+    if (show === 'all' || !process.env.EXPO_PUBLIC_CRYPTO_JS_SECRET) {
         return data;
     }
 
-    return decryptedData(data, process.env.REACT_APP_CRYPTO_JS_SECRET);
+    return decryptedData(data, process.env.EXPO_PUBLIC_CRYPTO_JS_SECRET);
 }
