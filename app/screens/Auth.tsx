@@ -2,6 +2,7 @@ import { FC } from 'react';
 import { Text, View, TextInput, Button } from 'react-native';
 import { SubmitHandler, useForm, Controller } from 'react-hook-form';
 import { useAppDispatch } from '@/app/store/hook';
+import { login } from '@/app/store/my-user/thunks';
 import { IUser } from '@/app/models/IUser';
 
 type Inputs = {
@@ -26,8 +27,9 @@ const Auth: FC = () => {
         },
     });
 
-    const onSubmit: SubmitHandler<Inputs> = (data) => {
-        console.log(data);
+    const onSubmit: SubmitHandler<Inputs> = async (data) => {
+        // console.log('onSubmit: ', data);
+        await dispatch(login({ ...data, lang: 'en' }));
     };
 
     return (

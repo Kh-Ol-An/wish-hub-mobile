@@ -6,8 +6,7 @@ import axios from 'axios';
 // Створення екземпляра axios з базовими налаштуваннями
 const api = axios.create({
     withCredentials: true,
-    baseURL: 'http://localhost:8080'
-    // baseURL: process.env.NODE_ENV === 'development' ? process.env.REACT_APP_DEV_API_URL : process.env.REACT_APP_API_URL,
+    baseURL: __DEV__ ? process.env.EXPO_PUBLIC_DEV_API_URL : process.env.EXPO_PUBLIC_API_URL
 });
 
 // Додавання токена до заголовків кожного запиту

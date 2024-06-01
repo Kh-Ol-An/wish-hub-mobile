@@ -4,14 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6e6d9242-fc19-47dc-926e-27f280734d47" name="Changes" comment="Installed react-redux, redux-toolkit, crypto-js, axios and react-hook-form, setting redux for using">
+    <list default="true" id="6e6d9242-fc19-47dc-926e-27f280734d47" name="Changes" comment="setting react-hook-form for using">
+      <change afterPath="$PROJECT_DIR$/%ProgramData%/Microsoft/Windows/UUS/State/_active.uusver" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/navigation/Navigation.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/navigation/Navigation.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/screens/Auth.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/Auth.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/screens/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/Home.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/screens/Instruction.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/Instruction.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/screens/Settings.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/Settings.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/store/my-user/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/store/my-user/api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/utils/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/utils/api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +35,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2fMsm2bLH8qE6DUYgPHSu5MYwYh" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -54,7 +56,9 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "/home/kholan/Development/wish-hub-mobile/app/screens",
+    "last_opened_file_path": "C:/Development/wish-hub-server",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "preferences.sourceCode.SCSS",
@@ -72,6 +76,13 @@
       <recent name="$PROJECT_DIR$/app" />
       <recent name="$PROJECT_DIR$/app/layout/menu" />
     </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-WS-241.17011.90" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -96,6 +107,8 @@
       <workItem from="1716143888856" duration="1752000" />
       <workItem from="1716184389684" duration="1753000" />
       <workItem from="1716273338325" duration="1367000" />
+      <workItem from="1717183543333" duration="3500000" />
+      <workItem from="1717223987648" duration="5135000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed path to images; added alias path to project">
       <created>1713902415169</created>
@@ -134,7 +147,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717160821833</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="setting react-hook-form for using">
+      <option name="closed" value="true" />
+      <created>1717162604466</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1717162604466</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,6 +180,7 @@
     <MESSAGE value="Created navigation structure" />
     <MESSAGE value="Update and refactored" />
     <MESSAGE value="Installed react-redux, redux-toolkit, crypto-js, axios and react-hook-form, setting redux for using" />
-    <option name="LAST_COMMIT_MESSAGE" value="Installed react-redux, redux-toolkit, crypto-js, axios and react-hook-form, setting redux for using" />
+    <MESSAGE value="setting react-hook-form for using" />
+    <option name="LAST_COMMIT_MESSAGE" value="setting react-hook-form for using" />
   </component>
 </project>
